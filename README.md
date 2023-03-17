@@ -1,6 +1,10 @@
 # FinetuneGLMWithPeft
 
-Strongly recommend https://github.com/ssbuild/chatglm_finetuning
+Strongly recommend:
+
+https://github.com/ssbuild/chatglm_finetuning
+
+https://github.com/lich99/ChatGLM-finetune-LoRA
 
 Simple implementation of using lora form the peft library to fine-tune the chatglm-6b
 
