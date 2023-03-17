@@ -2,6 +2,8 @@
 
 Strongly recommend:
 
+https://github.com/mymusise/ChatGLM-Tuning
+
 https://github.com/ssbuild/chatglm_finetuning
 
 https://github.com/lich99/ChatGLM-finetune-LoRA
