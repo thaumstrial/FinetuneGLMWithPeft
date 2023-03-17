@@ -1,5 +1,3 @@
-import os
-
 import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
@@ -24,7 +22,7 @@ print(model)
 model.print_trainable_parameters()
 
 # In practice, if we only have a few sentences, we can set num_epochs about 100
-device = 'gpu'
+device = 'cuda'
 num_epochs = 1
 lr = 1e-3
 
@@ -77,6 +75,7 @@ lr_scheduler = get_linear_schedule_with_warmup(
     num_training_steps=(len(train_dataloader) * num_epochs),
 )
 
+model.half()
 model = model.to(device)
 for epoch in range(num_epochs):
     model.train()
@@ -91,4 +90,3 @@ for epoch in range(num_epochs):
         optimizer.step()
         lr_scheduler.step()
         optimizer.zero_grad()
-
