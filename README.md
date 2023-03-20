@@ -28,6 +28,10 @@ torch
 
 # TODO
 
-deepspeed stage3 config
+- [X] Hugging face Trainer
 
-validation
+- [ ] Deepspeed stage3 config
+
+- [ ] Accelerator
+
+- [ ] validation
