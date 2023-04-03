@@ -38,6 +38,7 @@ training_args = TrainingArguments(
     save_strategy='steps',
     # deepspeed=deepspeed_config,
     report_to=None
+    # Resume from the checkpoint
     # resume_from_checkpoint='./results/checkpoint-12000'
 )
 
@@ -49,5 +50,7 @@ trainer = Trainer(
     args=training_args
 )
 
+# Resume from the checkpoint
 # trainer.train(resume_from_checkpoint=True)
 trainer.train()
+trainer.save_model('./results')
